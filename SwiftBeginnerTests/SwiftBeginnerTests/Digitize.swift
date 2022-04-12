@@ -10,8 +10,14 @@ import Foundation
 //TODO: Напишите функцию, которая берет на вход число и возвращает массив этого числа, развернутый в обратном порядке (например 123 = [3,2,1])
 
 private func digitize(num: Int) -> [Int]? {
-    // тут Ваш код
-    return nil
+    var res: [Int] = []
+    var number = num
+    res.append(number % 10)
+    while number >= 10  {
+        number /= 10
+        res.append(number % 10)
+    }
+    return res
 }
 
 

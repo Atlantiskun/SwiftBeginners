@@ -11,8 +11,7 @@ import Foundation
 //TODO: Напишите функцию, которая будет возвращать Yes при передаче параметра true и No при передаче параметра false
 
 private func boolToWord(bool: Bool) -> String? {
-    // тут Ваш код
-    return nil
+    return bool ? "Yes" : "No"
 }
 
 
